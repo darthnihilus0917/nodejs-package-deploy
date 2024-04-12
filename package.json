@@ -1,0 +1,17 @@
+{
+  "name": "rnd-nodejs-console-app-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consolidator-tool.js",
+  "scripts": {
+    "start": "nodemon consolidator-tool.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg consolidator-tool.js --target node16-win-x64 --output build/consolidator-tool.exe --include lib/** --include node_modules/readline/** --assets logs.txt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.0",
+    "readline": "^1.3.0"
+  }
+}
